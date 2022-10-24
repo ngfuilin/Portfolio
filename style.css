@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body {
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+ 
+header,
+main,
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+} 
+
+nav {
+    background: black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px 15px;
+    color:#fff; 
+}
+
+nav a:hover {
+    color: darkgreen;
+}
+
+
+ul {
+    padding-left: 10px;   
+}
+
+
+.ulcol{
+    columns: 2;
+    list-style: none;
+}
+
+#summary {
+    margin-bottom: 20px;
+   
+}
+
+.image {
+    flex-basis: 50%
+  }
+
+.container {
+  display: flex;
+  align-items:flex-start;
+  justify-content: center
+}
+
+.text {
+    padding-left: 20px;
+  }
+
+header.i:hover {
+    cursor: pointer;
+}
+
+p.lighter {
+    font-weight: lighter;
+}
+
+p.normal {
+    font-weight: normal;
+}
+
+p.lighterOpaque {
+    font-weight: lighter;
+    opacity: 0.6;
+}
+
+p.smallWhite {
+    color: white;
+    font-size: small;
+}
+
+div.work {
+    margin-top: 20px;
+   
+}
+
+#experience, #education, 
+#summary, #certificate, 
+#header {
+    margin-bottom: 10px;
+}
+
+#showCredential {
+  
+    height: 30px;
+    width: 130px;
+   margin-bottom: 10px;
+   background: darkgreen;
+   color: white;
+   cursor: pointer;
+}
+
+a.alink {
+    text-decoration: none; 
+    color: inherit;
+    }
+a.alink:visited { 
+    text-decoration: none; 
+    color: inherit;
+}
+a.alink:hover { 
+    text-decoration: underline; 
+    color: darkgreen;    
+}
+a.alink:active { 
+    text-decoration: underline;
+    color: darkgreen;
+}
+
+.alinkcv {
+    text-decoration: none;
+    background: darkgreen;
+    color: white;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+#header {
+    display: flex;
+}
+
+ #img {
+    border-radius: 50%;
+    
+}
+ 
+.column {
+    float: left;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.left {
+    width: 25%;
+    background: rgb(244, 241, 241);
+    padding:20px;
+}
+
+.right {
+    width: 30%;
+}
+
+.middle {
+    width: 45%;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;  
+
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.banner {
+   
+    min-height: 120px;
+    background-color: black;
+    padding: 20px 20px;
+
+}
+
+.bannerRight {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    color: white;
+}
+
+
+.bannerLeft {
+    float: left;
+    color: white;
+}
+
+.bannerLink{
+    margin-right: 10px;
+}
+
+.title {
+    color: darkblue;
+}
+
+footer {
+    background: black;
+    height: 100px;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding-top: 10px;
+}
+
+
+.footera {
+    text-decoration: none; 
+    color: lightgrey;
+    }
+
+.footera:visited { 
+    text-decoration: none; 
+    color: lightgrey;
+}
+.footera:hover { 
+    text-decoration: none; 
+    color: white;    
+}
+.footera:active { 
+    text-decoration: none;
+    color: white;
+}
+
+#contact {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .left {
+      width: 100%;
+      padding: 10px;
+     
+    }
+
+    .bannerRight {
+        display: inline-block;
+        
+    }
+
+  }
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .left, .middle, .right {
+      width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+      }
+
+      .bannerRight {
+        display: inline-block;
+        
+    }
+
+     
+}
